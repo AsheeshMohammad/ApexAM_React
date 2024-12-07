@@ -1,8 +1,11 @@
+import HeaderComponent from "../../Components/HomeComponent/HeaderComponent"
 import { TopHeader } from "../../GlobalStyledComponents/GlobalStyled.styles"
 
 const Header = () => {
   return (
-    <TopHeader>Hii</TopHeader>
+    <TopHeader>
+      <HeaderComponent />
+    </TopHeader>
   )
 }
 

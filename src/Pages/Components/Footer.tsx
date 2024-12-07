@@ -1,9 +1,7 @@
-const Footer = () => {
-  const date=new Date();
-  const year=date.getFullYear();
-  return (
-    <div>© {year} ApexAM. All Rights Reserved.</div>
-  )
-}
+import FooterComponent from "../../Components/FooterComponent/FooterComponent";
 
-export default Footer
+const Footer = () => {
+  return <FooterComponent />;
+};
+
+export default Footer;
