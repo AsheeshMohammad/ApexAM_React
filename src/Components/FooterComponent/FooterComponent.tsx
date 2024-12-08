@@ -4,7 +4,7 @@ const FooterComponent = () => {
   const date = new Date();
   const year = date.getFullYear();
 
-  return <FooterTextStyleComponent> © {year} ApexAM. All Rights Reserved.</FooterTextStyleComponent>;
+  return <FooterTextStyleComponent> © {year} Apex_AM. All Rights Reserved.</FooterTextStyleComponent>;
 };
 
 export default FooterComponent;

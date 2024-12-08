@@ -1,3 +1,4 @@
+import { Image } from '@mui/icons-material';
 import { Box, BoxProps, Grid2, Grid2Props, Typography, TypographyProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link, LinkProps } from 'react-router-dom';
@@ -32,4 +33,7 @@ export const MenuOverlayStyledComponent = styled(Grid2)<Grid2Props>(({ theme }) 
     flexDirection:'column',
     paddingTop:'30%',
     gap:4
+}));
+export const LogoStyledComponent = styled(Box)(({ theme }) => ({
+    height:50
 }));

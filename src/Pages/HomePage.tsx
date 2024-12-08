@@ -1,8 +1,11 @@
 import { Typography } from "@mui/material"
+import PageContent from "../Components/PageContent/PageContent"
 
 const HomePage = () => {
   return (
-    <Typography>HomePage</Typography>
+    <>
+      <PageContent />
+    </>
   )
 }
 
