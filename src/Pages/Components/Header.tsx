@@ -1,4 +1,5 @@
-import HeaderComponent from "../../Components/HomeComponent/HeaderComponent"
+
+import HeaderComponent from "../../Components/HomeComponent/HeaderComponent/HeaderComponent"
 import { TopHeader } from "../../GlobalStyledComponents/GlobalStyled.styles"
 
 const Header = () => {

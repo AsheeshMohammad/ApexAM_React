@@ -1,0 +1,46 @@
+.slide-left {
+    animation: slideLeft 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide right animation */
+  .slide-right {
+    animation: slideRight 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideRight {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide up animation */
+  .slide-up {
+    animation: slideUp 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

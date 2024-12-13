@@ -1,15 +1,21 @@
-import React from 'react'
-import { ContentHeaderStyledComponent } from '../../GlobalStyledComponents/GlobalStyled.styles'
-import { Box } from '@mui/material'
+import {
+  ContentBodyStyledComponent,
+  ContentHeaderStyledComponent,
+} from "../../GlobalStyledComponents/GlobalStyled.styles";
+import { PageContentGridStyledComponent } from "./PageContent.styles";
+import "./PageContent.scss";
 
 const PageContent = () => {
   return (
-    <Box>
-      <ContentHeaderStyledComponent>
-          Bespoke software <br /> solutions for your unique business needs
-      </ContentHeaderStyledComponent>
-    </Box>
-  )
-}
+    <PageContentGridStyledComponent container>
+        <ContentHeaderStyledComponent>
+          APEX_AM
+        </ContentHeaderStyledComponent>
+      <ContentBodyStyledComponent>
+        An IT Service company
+      </ContentBodyStyledComponent>
+    </PageContentGridStyledComponent>
+  );
+};
 
-export default PageContent
+export default PageContent;
