@@ -1,3 +1,7 @@
+import "../ServicesComponent/Services.scss";
+import CodeIcon from "@mui/icons-material/Code";
+import BuildIcon from "@mui/icons-material/Build";
+import { Button, Grid2 } from "@mui/material";
 import {
   CardComponentGridStyled,
   CardComponentStyled,
@@ -5,47 +9,36 @@ import {
   ServiceHeaderStyledComponent,
   ServiceHeaderTextStyledComponent,
   ServiceSubHeaderTextStyledComponent,
-} from "./Services.styles";
-import "./Services.scss";
-import PhoneAndroidRoundedIcon from "@mui/icons-material/PhoneAndroidRounded";
-import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
-import EmojiObjectsOutlinedIcon from "@mui/icons-material/EmojiObjectsOutlined";
-import { Grid2 } from "@mui/material";
+} from "../ServicesComponent/Services.styles";
+import { ButtonComponentStyled } from "./CollabComponent.styles";
 
-const Services = () => {
+const CollabComponent = () => {
   const Services = [
     {
-      ServiceName: "Mobile Application (Android / IOS)\n[Frontend and Backend]",
+      ServiceName: "We Collaborate",
       ServiceDescription:
-        "We build robust and user-friendly mobile apps for both Android and iOS platforms, handling everything from design to backend development",
-      ServiceImage: <PhoneAndroidRoundedIcon />,
+        "We can collaborate with your existing tech team to scale existing software applications or design customized software applications that suits your everyday need and simplifies various processes.",
+      ServiceImage: <CodeIcon />,
       backgroundColor: "#e4bc8d",
       additionalClass: "slide-right",
       sx: {},
     },
     {
-      ServiceName: "Web Application [Frontend and Backend]",
+      ServiceName: "We Build",
       ServiceDescription:
-        " We design and develop web applications that are responsive, performant, and scalable. We offer full-stack development services, from frontend to backend",
-      ServiceImage: <DesktopWindowsOutlinedIcon />,
-      backgroundColor: "#bec2c9",
-      additionalClass: "slide-up",
-      sx: {
-        alignSelf: "flex-start",
-      },
-    },
-    {
-      ServiceName: "IT Solutions",
-      ServiceDescription:
-        "We provide comprehensive IT solutions to meet your business needs, including consulting, system integration",
-      ServiceImage: <EmojiObjectsOutlinedIcon />,
+        "We develop high quality bespoke web and mobile applications for organizations, institutions and SMEs",
+      ServiceImage: <BuildIcon />,
       backgroundColor: "#bec2c9",
       additionalClass: "slide-left",
-      sx: {},
     },
   ];
   return (
-    <CardComponentGridStyled container >
+    <CardComponentGridStyled
+      container
+      position={"relative"}
+      height={"280px !important"}
+      gap={"100px !important"}
+    >
       {Services.map((item) => (
         <CardComponentStyled
           className={item.additionalClass}
@@ -80,8 +73,11 @@ const Services = () => {
           </Grid2>
         </CardComponentStyled>
       ))}
+      <ButtonComponentStyled variant="contained">
+        Contact us
+      </ButtonComponentStyled>
     </CardComponentGridStyled>
   );
 };
 
-export default Services;
+export default CollabComponent;

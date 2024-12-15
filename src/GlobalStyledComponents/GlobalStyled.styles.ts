@@ -11,7 +11,7 @@ export const TopHeader = styled(Box)<BoxProps>(({ theme }) => ({
 export const ContentHeaderStyledComponent = styled(Typography)<TypographyProps>(
   ({ theme }) => ({
     fontFamily: "Roboto-bold",
-    color: "#0009",
+    color: "#000",
     fontSize: "100px",
     textAlign: "center",
   })
@@ -24,6 +24,6 @@ export const ContentBodyStyledComponent = styled(Typography)<TypographyProps>(
     textAlign: "center",
     lineHeight: 1,
     textTransform: "capitalize",
-    marginTop: -20,
+    marginTop: -15,
   })
 );

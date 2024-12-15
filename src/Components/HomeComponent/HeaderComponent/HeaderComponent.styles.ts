@@ -62,6 +62,7 @@ export const WindowMenuTextStyledComponent = styled(Typography)(
       cursor: "pointer",
       transform: "scale(1.1)",
       background:'#e4bc8d',
+      fontFamily: "Roboto-Bold",
       color:'#000'
     },
   })
